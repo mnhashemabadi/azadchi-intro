@@ -52,7 +52,7 @@ End-to-end tests: Playwright, devDependency `@playwright/test` ^1.61.1 in `azadc
 - Image upload: multer and sharp
 - Web push: web-push
 - On-device speech input: `speech_to_text` in `azadchi_app/lib/core/native_stt/device_speech.dart`
-- Request matching: PostgreSQL pgvector embeddings. The extension migration is `azadchi-server/database/migrations/020_pgvector_request_embeddings.sql`. Matching code is in `azadchi-server/src/modules/matching/matchEmbedding.js`.
+- Request matching: lexical match is the default path. PostgreSQL pgvector embeddings exist for an optional shortlist and the flag defaults off (`ALWER_MATCH_PGVECTOR`). The extension migration is `azadchi-server/database/migrations/020_pgvector_request_embeddings.sql`. Matching code is in `azadchi-server/src/modules/matching/matchEmbedding.js`.
 
 ## Boundaries
 
